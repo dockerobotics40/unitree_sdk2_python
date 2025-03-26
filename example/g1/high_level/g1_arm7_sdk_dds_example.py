@@ -87,7 +87,7 @@ class Custom:
             0., -kPi_2, 0., kPi_2, 0., 0., 0., 
             0, 0, 0
         ]
-
+    
         self.arm_joints = [
           G1JointIndex.LeftShoulderPitch,  G1JointIndex.LeftShoulderRoll,
           G1JointIndex.LeftShoulderYaw,    G1JointIndex.LeftElbow,

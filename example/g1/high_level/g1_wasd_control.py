@@ -75,9 +75,16 @@ def initialize_robot(network_interface):
     client.StandUp()
     time.sleep(STARTUP_DELAY)
     
+    print("Setting robot in balance stand mode...")
+    client.BalanceStand(0)
+    time.sleep(2) 
+    
     print("Starting robot...")
     client.Start()
     time.sleep(COMMAND_DELAY)
+    
+    print("Robot started")
+    
     
     return client
 
